@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace Vecnavium\DisableVoid;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\utils\Config;
@@ -33,10 +33,10 @@ class Main extends PluginBase implements Listener{
 			return;
 		}
 		foreach ($this->config->getNested("disabled-worlds") as $world){
-			if ($entity->getLevel()->getName() === $world) return;
+			if ($entity->getWorld()->getName() === $world) return;
 		}
 		if($event->getCause() === EntityDamageEvent::CAUSE_VOID){
-			$entity->teleport($entity->getLevel())->getSafeSpawn());
+			$entity->teleport($entity->getWorld())->getSafeSpawn());
 		}
 	}
 }
