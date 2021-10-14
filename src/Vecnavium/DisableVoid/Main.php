@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace Vecnavium\DisableVoid;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\player\Player;
+use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\utils\Config;
