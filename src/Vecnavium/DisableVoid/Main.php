@@ -36,7 +36,7 @@ class Main extends PluginBase implements Listener{
 			if ($entity->getLevel()->getName() === $world) return;
 		}
 		if($event->getCause() === EntityDamageEvent::CAUSE_VOID){
-			$entity->teleport($entity->getWorld()->getSafeSpawn());
+			$entity->teleport($entity->getLevel())->getSafeSpawn());
 		}
 	}
 }
