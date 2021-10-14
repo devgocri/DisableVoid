@@ -1,0 +1,6 @@
+name: DisableVoid
+main: Vecnavium\DisableVoid\Main
+author: Vecnavium
+api: 4.0.0
+version: 1.0.0
+description: A PocketMine-MP Plugin that disables void on your server.
