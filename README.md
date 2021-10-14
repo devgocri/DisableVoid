@@ -11,7 +11,7 @@ A PocketMine-MP Plugin that disables void on your server
 
 # Planned features
 
-- [ ] Configurable option for which worlds void should be disabled.
+- [X] Configurable option for which worlds void should be disabled.
 
 
 # BugReport
